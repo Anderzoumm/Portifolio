@@ -1,46 +1,32 @@
-Portfólio Pessoal - Anderson Queiroga
-📖 Sobre o Projeto
-Este é um projeto de portfólio pessoal desenvolvido como atividade prática para a disciplina de Fundamentos da Programação Web do curso de Análise e Desenvolvimento de Sistemas da UNINTER.
+# 🌐 Portfólio Pessoal - Anderson Queiroga
+[![Ver Site](https://img.shields.io/badge/🔗%20Ver%20Portfólio%20Online-000?style=for-the-badge&logo=google-chrome&logoColor=white)](https://seu-site.com)
+## 📖 Sobre o Projeto
 
-O objetivo foi criar um site de página única (SPA - Single Page Application) totalmente funcional, responsivo e interativo, utilizando apenas tecnologias web fundamentais (HTML, CSS e JavaScript), sem o uso de frameworks ou bibliotecas externas como Bootstrap ou React.
+Este é um projeto de portfólio pessoal desenvolvido como atividade prática para a disciplina de **Fundamentos da Programação Web**, do curso de **Análise e Desenvolvimento de Sistemas** da UNINTER.
 
-O site apresenta informações sobre mim, minha formação, minhas habilidades técnicas (hard skills) e um formulário de contato funcional que direciona a mensagem para o WhatsApp.
+O principal objetivo foi criar um site de página única (SPA - *Single Page Application*) totalmente funcional, responsivo e interativo, **utilizando apenas HTML, CSS e JavaScript puros**, sem frameworks ou bibliotecas externas como Bootstrap ou React.
 
-🚀 Tecnologias Utilizadas
-O projeto foi construído utilizando as seguintes tecnologias:
+O site apresenta informações sobre mim, minha formação, minhas *hard skills* e conta com um **formulário de contato funcional que redireciona a mensagem para o WhatsApp**.
 
-HTML5: Para a estruturação semântica do conteúdo.
+---
 
-CSS3: Para toda a estilização, layout e responsividade.
+## 🚀 Tecnologias Utilizadas
 
-JavaScript (ES6+): Para as funcionalidades interativas e manipulação do DOM.
+- **HTML5**: Estrutura semântica do conteúdo.  
+- **CSS3**: Estilização, layout e responsividade.  
+- **JavaScript (ES6+)**: Funcionalidades interativas e manipulação do DOM.
 
-✨ Funcionalidades e Técnicas Implementadas
-Design Responsivo: O layout se adapta perfeitamente a diferentes tamanhos de tela, como desktops, tablets e celulares.
+---
 
-Tema Claro e Escuro (Dark/Light Mode): O usuário pode alternar entre os temas, e sua preferência é salva no navegador (localStorage) para visitas futuras.
+## ✨ Funcionalidades e Técnicas Implementadas
 
-Navegação Suave (Smooth Scrolling): A navegação entre as seções é feita de forma suave, melhorando a experiência do usuário.
+- 📱 **Design Responsivo**: Compatível com desktops, tablets e smartphones.  
+- 🌗 **Tema Claro e Escuro (Dark/Light Mode)**: Preferência salva no `localStorage`.  
+- 🧭 **Navegação Suave (Smooth Scrolling)**: Transições suaves entre seções.  
+- ⌨️ **Animação de Digitação**: Apresentação dinâmica das áreas de atuação.  
+- 🖱️ **Elementos Interativos**: Efeitos *hover* em botões, links e cards.  
+- 🎚️ **Barra de Rolagem Personalizada**: Integrada ao estilo do site.  
+- 📩 **Formulário com Integração ao WhatsApp**: Envio de mensagens com preenchimento automático.  
+- 🧹 **Código Limpo e Comentado**: Fácil de entender, manter e evoluir.
 
-Animação de Digitação: Na seção inicial, um texto é digitado e apagado dinamicamente para apresentar minhas áreas de atuação.
-
-Elementos Interativos: Efeitos de hover em botões, links e cards para fornecer feedback visual ao usuário.
-
-Barra de Rolagem Personalizada: Estilizada para se integrar ao design do site.
-
-Formulário de Contato com Integração ao WhatsApp: O formulário coleta os dados do usuário e, ao clicar em enviar, abre o WhatsApp com uma mensagem pronta.
-
-Código Limpo e Comentado: Toda a estrutura do código foi organizada e comentada para facilitar o entendimento e a manutenção.
-
-⚙️ Como Executar
-Clone este repositório:
-
-git clone https://github.com/seu-usuario/seu-repositorio.git
-
-Navegue até a pasta do projeto:
-
-cd seu-repositorio
-s
-Abra o arquivo index.html no seu navegador de preferência.
-
-Feito com ❤️ por Anderson Queiroga.
+---
