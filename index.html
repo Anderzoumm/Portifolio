@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- O idioma está definido como português do Brasil -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="favicon" href="assets/images/icons/favicon.png">
+    <!-- Título da página -->
+    <title>Portifolio</title>
+    
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <!-- Link para o arquivo JavaScript (o 'defer' faz com que ele carregue após o HTML) -->
+    <script src="assets/script.js" defer></script>
+</head>
+
+<!-- O body começa com o tema escuro (dark-theme) como padrão -->
+<body class="dark-theme">
+
+    <!-- CABEÇALHO FIXO -->
+    <header>
+        <div class="logo">
+            <span>&lt;</span> Anderson Queiroga <span>/&gt;</span>
+        </div>
+        <!-- Links de Navegação Obrigatórios -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#formacao-skills">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <nav class="social-links">
+            <!-- Botoes com links das redes sociais -->
+             <!-- TODOS OS ICONES FORAM RETIRADOS DO http://www.w3.org PARA FACILITAR NO CODIGO!!!!  -->
+            <a href="https://github.com/Anderzoumm" target="_blank" aria-label="GitHub">
+                <!-- Ícone do GitHub -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/anderzoum/" target="_blank" aria-label="LinkedIn">
+                <!-- Ícone do LinkedIn -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://www.instagram.com/euae_andyy/" target="_blank" aria-label="Instagram">
+                <!-- Ícone do Instagram -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://wa.me/5583982173372" target="_blank" aria-label="WhatsApp">
+                <!-- Ícone do WhatsApp -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </a>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <!-- SEÇÃO INICIAL (HERO SECTION) -->
+        <section id="home">
+            <div class="home-content">
+                <h1>Anderson Queiroga</h1>
+                <!-- O texto aqui será animado pelo JavaScript, O TEXTO NAO FICA AQUI, FICA NO script.js -->
+                <p class="subtitle"><span class="typing-effect"></span></p>
+                <a href="#portfolio" class="btn-primary">Ver Projetos</a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO "SOBRE MIM" -->
+        <section id="sobre">
+            <div class="sobre-content">
+                <img src="assets/images/Eu.png" alt="eu" class="foto-sobre">
+                <div class="texto-sobre">
+                    <h2>Sobre Mim</h2>
+                    <p>
+                        Olá! Meu nome é Anderson Queiroga, sou estudante de Analise e Desenvolvido de Sistemas do Centro Universitario Internacinal (UNINTER) e desenvolvedor Backend. Carrego comigo cerca de 3 anos de experiencia com manutenção de computadores e suporte tecnico, o que me tornou um profissional entusiata e dedicado a aprender. Atualmente estou em busca de uma area para me especilizar dentro do desenvolvimento Backend, tenho interesse na area corpoartiva, com foco em desenvolcimento em Java. Busco oportunidades no mercado como dev e, em um futuro próximo, viso me tornar um desenvolvedor Full-Stack
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO "FORMAÇÃO & SKILLS" -->
+        <section id="formacao-skills">
+            <h2>Formação & Skills</h2>
+            
+            <!-- Progresso do Curso -->
+            <div class="course-progress">
+                <h3>Análise e Desenvolvimento de Sistemas - UNINTER</h3>
+                <div class="progress-bar-container">
+                    <div class="progress-bar"></div>
+                </div>
+                <span>5 de 30 meses concluídos</span>
+            </div>
+            <!-- Idiomas-->
+            <div class="languages-section">
+                <h3>Idiomas</h3>
+                <ul>
+                    <li><strong>Português:</strong> Nativo</li>
+                    <li><strong>Inglês:</strong> Intermediário (Leitura e Escrita)</li>
+                    <!-- Adicione outros idiomas se tiver -->
+                </ul>
+            </div>
+            <br>
+            <!-- Container para as Hard Skills -->
+            <div class="skills-container">
+                <!-- SKILL 1: HTML5 -->
+                <div class="skill-card">
+                    <img src="assets/images/icons/html5.png" alt="icone do HTML5" class="skill-icon-img">
+                    <h3>HTML5</h3>
+                    <p>Linguagem de marcação para estruturar páginas web e seus conteúdos.</p>
+                </div>
+                <!-- SKILL 2: CSS3 -->
+                <div class="skill-card">
+                    <img src="assets/images/icons/css3.png" alt="icone css" class=" skill-icon-img">
+                    <h3>CSS3</h3>
+                    <p>Linguagem de estilização usada para definir a aparência visual das páginas web.</p>
+                </div>
+                <!-- SKILL 3: JavaScript -->
+                <div class="skill-card">
+                    <img src="assets/images/icons/js.png" alt="icone js" class=" skill-icon-img">
+                    <h3>JavaScript</h3>
+                    <p>Linguagem de programação que permite criar conteúdos dinâmicos e interativos.</p>
+                </div>
+                <!-- SKILL 4: Python -->
+                <div class="skill-card">
+                    <img src="assets/images/icons/python.png" alt="icone python" class=" skill-icon-img">
+                    <h3>Python</h3>
+                    <p>Linguagem versátil usada em desenvolvimento web, ciência de dados e automação.</p>
+                </div>
+                <!-- SKILL 5: Pandas -->
+                <div class="skill-card">
+                    <img src="assets/images/icons/pandas.png" alt="icone pandas" class=" skill-icon-img">
+                    <h3>Pandas</h3>
+                    <p>Biblioteca Python para manipulação e análise de dados de forma eficiente.</p>
+                </div>
+                <!-- SKILL 6: MySQL -->
+                <div class="skill-card">
+                    <img src="assets/images/icons/mysql.png" alt="icone mysql" class=" skill-icon-img">
+                    <h3>MySQL</h3>
+                    <p>Sistema de gerenciamento de banco de dados relacional para armazenar e consultar dados.</p>
+                </div>
+                <!-- SKILL 7: Git & GitHub -->
+                <div class="skill-card">
+                    <img src="assets/images/icons/git.png" alt="icone git" class=" skill-icon-img">
+                    <h3>Git & GitHub</h3>
+                    <p>Sistema de controle de versão e plataforma para hospedar e colaborar em projetos.</p>
+                </div>
+                <!-- SKILL 8: Linux -->
+                <div class="skill-card">
+                    <img src="assets/images/icons/linux.png" alt="icone linux" class=" skill-icon-img">
+                    <h3>Linux</h3>
+                    <p>Sistema operacional de código aberto amplamente utilizado em servidores e desenvolvimento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO "PORTFÓLIO" -->
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <div class="container-projetos">
+                <!-- PROJETO 1 -->
+                <div class="projeto">
+                    <img src="assets/images/projects/Lar_Temporario.gif" alt="lar temporario">
+                    <h3>Lar temporario</h3>
+                    <p>Um site simples feito para uma ONG de resgate de animais de rua. O site contem formularios para se candidatar a voluntario, animais para adoção ( onde o admin pode modificar) e diversas informações sobre a OND e sua historia.</p>
+                    <a href="https://anderzoumm.github.io/Lar-temporario/" target="_blank">Ver Projeto</a>
+                </div>
+                <div class="projeto">
+                    <img src="assets/images/projects/Livraria.png" alt="projeto python">
+                    <h3>Sistema de Gerenciamento de Livros</h3>
+                    <p>Este projeto é um sistema simples e funcional de gerenciamento de livros, com interface via terminal. Ele permite ao usuário cadastrar, consultar (por ID, por autor ou todos os livros) e remover livros do acervo. Cada livro é armazenado como um dicionário contendo ID, nome, autor e editora, e todos são guardados em uma lista que simula um banco de dados em memória</p>
+                    <a href="https://github.com/Anderzoumm/Trabalho-de-Logica" target="_blank">Ver Projeto</a>
+                </div>
+                <!-- Adicione mais projetos aqui -->
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <!-- O formulário não precisa mais de um ID para esta função -->
+            <form>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                <!-- O botão agora é do tipo "button" e tem um ID para o JavaScript -->
+                <button type="button" id="send-whatsapp" class="btn-primary">Enviar via WhatsApp</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2024 - Anderson Queiroga. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- BOTÕES FIXOS -->
+    <div class="fixed-buttons">
+        <!-- Botão para voltar ao topo -->
+        <button id="back-to-top" aria-label="Voltar ao topo">
+            <!-- Ícone de seta para cima -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        </button>
+        <!-- Botão para trocar o tema -->
+        <button id="theme-toggle" aria-label="Mudar tema">
+            <!-- Os ícones de sol e lua serão trocados via CSS -->
+            <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+    </div>
+
+</body>
+</html>

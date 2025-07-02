@@ -1,0 +1,453 @@
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fira+Code:wght@500&display=swap');
+
+/* ----- VARIÁVEIS DE COR (CSS Variables) ----- */
+/* Isso facilita a troca de temas */
+:root {
+    /* Tema Escuro (Padrão) */
+    --color-background: #121212;
+    --color-surface: #1e1e1e;
+    --color-primary: #9333ea; /* Roxo mais vibrante */
+    --color-primary-hover: #7e22ce;
+    --color-text: #e0e0e0;
+    --color-text-secondary: #a0a0a0;
+    --color-border: #333;
+    
+    /* Tema Claro */
+    --light-background: #f5f5f5;
+    --light-surface: #ffffff;
+    --light-text: #121212;
+    --light-text-secondary: #555;
+    --light-border: #ddd;
+}
+
+/* ----- ESTILOS GLOBAIS E RESET ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos para o tema escuro */
+body.dark-theme {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+/* Estilos para a navegação principal */
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.main-nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.main-nav a:hover {
+    color: var(--color-primary);
+}
+/*Icones das redes sociais */
+.social-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0.7; 
+}
+.social-links a:hover .social-icon {
+    transform: translateY(-3px);
+    opacity: 1; 
+}
+
+/* Estilos para o tema claro */
+body.light-theme {
+    background-color: var(--light-background);
+    color: var(--light-text);
+}
+
+main {
+    padding-top: 70px; /* Altura do header */
+}
+
+section {
+    padding: 80px 8%;
+    min-height: 100vh;
+    border-bottom: 1px solid var(--color-border);
+    transition: border-color 0.3s;
+}
+body.light-theme section {
+    border-bottom-color: var(--light-border);
+}
+
+
+/* ----- BARRA DE ROLAGEM PERSONALIZADA ----- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-background);
+}
+body.light-theme::-webkit-scrollbar-track {
+    background: var(--light-background);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-hover);
+}
+
+
+/* ----- CABEÇALHO ----- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 5%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-border);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+body.light-theme header {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom-color: var(--light-border);
+}
+
+.logo {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.logo span {
+    color: var(--color-primary);
+}
+body.light-theme .logo {
+    color: var(--light-text);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+.social-links a svg {
+    width: 24px;
+    height: 24px;
+    color: var(--color-text-secondary);
+    transition: color 0.3s, transform 0.3s;
+}
+.social-links a:hover svg {
+    color: var(--color-primary);
+    transform: translateY(-3px);
+}
+body.light-theme .social-links a svg {
+    color: var(--light-text-secondary);
+}
+
+
+/* ----- BOTÕES PRIMÁRIOS ----- */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-3px);
+}
+
+/* ----- SEÇÃO HOME (HERO) ----- */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#home h1 {
+    font-size: 4rem;
+}
+body.light-theme #home h1 { color: var(--light-text); }
+
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--color-text-secondary);
+    margin: 1rem 0 2rem 0;
+    min-height: 2.2rem; /* Evita que o layout pule enquanto o texto digita */
+}
+.typing-effect {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+
+/* ----- SEÇÃO SOBRE MIM ----- */
+#sobre .sobre-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.foto-sobre {
+    width: 40%;
+    max-width: 450px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.texto-sobre h2 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+.texto-sobre p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+}
+body.light-theme .texto-sobre p { color: var(--light-text-secondary); }
+
+/* Estilo para a seção de idiomas */
+.languages-section {
+    max-width: 800px;
+    margin: 60px auto 0 auto; /* Espaço acima */
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-surface);
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+}
+body.light-theme .languages-section {
+    background-color: var(--light-surface);
+    border-color: var(--light-border);
+}
+.languages-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+.languages-section ul {
+    list-style: none;
+    padding: 0;
+}
+.languages-section li {
+    margin-bottom: 0.5rem;
+    color: var(--color-text-secondary);
+}
+body.light-theme .languages-section li {
+    color: var(--light-text-secondary);
+}
+
+/* ----- SEÇÃO FORMAÇÃO & SKILLS ----- */
+#formacao-skills h2 { text-align: center; font-size: 2.5rem; color: var(--color-primary); margin-bottom: 50px; }
+
+.course-progress {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+.course-progress h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+body.light-theme .course-progress h3 { color: var(--light-text); }
+
+.progress-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: var(--color-surface);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--color-border);
+}
+body.light-theme .progress-bar-container {
+    background-color: var(--light-surface);
+    border-color: var(--light-border);
+}
+
+.progress-bar {
+    width: 16.67%; /* (5 / 30) * 100 */
+    height: 100%;
+    background-color: var(--color-primary);
+    border-radius: 5px;
+}
+.course-progress span {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+.skill-icon-img {
+    width: 48px;  
+    height: 48px; 
+    margin-bottom: 10px; 
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.skill-card {
+    background-color: var(--color-surface);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s;
+}
+body.light-theme .skill-card {
+    background-color: var(--light-surface);
+    border-color: var(--light-border);
+}
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-primary);
+}
+.skill-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+body.light-theme .skill-card h3 { color: var(--light-text); }
+.skill-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+/* Ícones SVG dentro dos cards - Placeholder */
+.skill-icon {
+    height: 48px;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+
+/* ----- SEÇÕES PORTFOLIO E CONTATO (Estilos herdados e ajustados) ----- */
+#portfolio h2, #contato h2 { text-align: center; font-size: 2.5rem; color: var(--color-primary); margin-bottom: 50px; }
+.container-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.projeto {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.projeto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.projeto img { width: 100%; height: 200px; object-fit: cover; }
+.projeto h3, .projeto p, .projeto a { padding: 0 20px; }
+.projeto h3 { margin: 15px 0 10px 0; }
+.projeto p { color: var(--color-text-secondary); font-size: 0.9rem; margin-bottom: 20px; }
+.projeto a { display: inline-block; background-color: var(--color-primary); color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-bottom: 20px; font-weight: 600; transition: background-color 0.3s; }
+.projeto a:hover { background-color: var(--color-primary-hover); }
+
+#contato form {
+    max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;
+}
+#contato input, #contato textarea {
+    width: 100%; padding: 12px; font-family: 'Poppins', sans-serif; font-size: 1rem;
+    background-color: var(--color-surface); border: 1px solid var(--color-border);
+    border-radius: 5px; color: var(--color-text);
+}
+body.light-theme #contato input, body.light-theme #contato textarea {
+    background-color: var(--light-surface); border-color: var(--light-border); color: var(--light-text);
+}
+#contato input:focus, #contato textarea:focus {
+    outline: none; border-color: var(--color-primary);
+}
+
+
+/* ----- RODAPÉ ----- */
+footer {
+    text-align: center;
+    padding: 20px 8%;
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+}
+body.light-theme footer {
+    background-color: var(--light-surface);
+    border-top-color: var(--light-border);
+}
+
+
+/* ----- BOTÕES FIXOS ----- */
+.fixed-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.fixed-buttons button {
+    width: 50px; height: 50px; border-radius: 50%;
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.fixed-buttons button:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+    transform: scale(1.1);
+}
+body.light-theme .fixed-buttons button {
+    background-color: var(--light-surface);
+    color: var(--light-text);
+    border-color: var(--light-border);
+}
+
+#back-to-top {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+#back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Lógica para mostrar Sol ou Lua no botão de tema */
+.light-theme .theme-toggle .sun { display: none; }
+.dark-theme .theme-toggle .moon { display: none; }
+
+
+/* ----- RESPONSIVIDADE ----- */
+@media (max-width: 768px) {
+    #home h1 { font-size: 2.5rem; }
+    .subtitle { font-size: 1.2rem; }
+    #sobre .sobre-content { flex-direction: column; text-align: center; }
+    .foto-sobre { width: 80%; }
+}
